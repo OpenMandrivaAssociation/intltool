@@ -1,7 +1,7 @@
 Summary:	Scripts and assorted auto* magic for i18nalizing various kinds of data files
 Name:		intltool
 Version: 0.35.5
-Release: %mkrel 1
+Release: %mkrel 2
 Source0:	ftp://ftp.gnome.org/pub/GNOME/sources/%{name}/%{name}-%{version}.tar.bz2
 License:	GPL
 URL: 		http://www.gnome.org/
@@ -28,6 +28,7 @@ Merge back the translations from .po files into .xml, .desktop and
 
 %prep
 %setup -q
+sed -i '/"intltool-extract"/ s,","/usr/bin/,3' intltool-update.in.in
 
 %build
 %configure2_5x
