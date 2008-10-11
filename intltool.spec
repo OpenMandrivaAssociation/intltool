@@ -1,7 +1,7 @@
 Summary:	Scripts and assorted auto* magic for i18nalizing various kinds of data files
 Name:		intltool
-Version: 0.40.4
-Release: %mkrel 2
+Version: 0.40.5
+Release: %mkrel 1
 Source0:	ftp://ftp.gnome.org/pub/GNOME/sources/%{name}/%{name}-%{version}.tar.bz2
 License:	GPLv2+
 URL: 		http://www.gnome.org/
