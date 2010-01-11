@@ -1,8 +1,8 @@
 Summary:	Scripts and assorted auto* magic for i18nalizing various kinds of data files
 Name:		intltool
-Version: 0.40.6
-Release: %mkrel 2
-Source0:	ftp://ftp.gnome.org/pub/GNOME/sources/%{name}/%{name}-%{version}.tar.bz2
+Version: 0.41.0
+Release: %mkrel 1
+Source0:	http://edge.launchpad.net/%name/trunk/%version/+download/%{name}-%{version}.tar.gz
 License:	GPLv2+
 URL: 		http://www.gnome.org/
 Group:		Development/GNOME and GTK+
@@ -46,7 +46,7 @@ rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(-,root,root)
-%doc AUTHORS COPYING ChangeLog NEWS README
+%doc AUTHORS COPYING README
 %{_bindir}/*
 %{_datadir}/%{name}
 %{_datadir}/aclocal/*
