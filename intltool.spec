@@ -1,7 +1,7 @@
 Summary:	Scripts and assorted auto* magic for i18nalizing various kinds of data files
 Name:		intltool
 Version: 0.41.1
-Release: %mkrel 1
+Release: %mkrel 2
 Source0:	http://edge.launchpad.net/%name/trunk/%version/+download/%{name}-%{version}.tar.gz
 License:	GPLv2+
 URL: 		http://www.gnome.org/
