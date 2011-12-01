@@ -37,12 +37,12 @@ Merge back the translations from .po files into .xml, .desktop and
 make check
 
 %install
-rm -rf $RPM_BUILD_ROOT
+rm -rf %{buildroot}
 
 %{makeinstall_std}
 
 %clean
-rm -rf $RPM_BUILD_ROOT
+rm -rf %{buildroot}
 
 %files
 %defattr(-,root,root)
