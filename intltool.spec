@@ -1,18 +1,17 @@
 Summary:	Scripts and assorted auto* magic for i18nalizing various kinds of data files
 Name:		intltool
-Version: 0.50.2
-Release: %mkrel 1
-Source0:	http://edge.launchpad.net/%name/trunk/%version/+download/%{name}-%{version}.tar.gz
+Version:	0.50.2
+Release:	2
+Group:		Development/GNOME and GTK+
 License:	GPLv2+
 URL: 		http://www.gnome.org/
-Group:		Development/GNOME and GTK+
-BuildRoot:	%{_tmppath}/%{name}-%{version}-%{release}-buildroot
+Source0:	http://edge.launchpad.net/%{name}/trunk/%{version}/+download/%{name}-%{version}.tar.gz
+BuildArch:	noarch
+
+BuildRequires:	perl-XML-Parser
 Requires:	perl-XML-Parser
 Requires:	perl gettext-devel patch
-BuildRequires:	perl-XML-Parser
-Obsoletes:	xml-i18n-tools
-Provides:	xml-i18n-tools = %{version}-%{release}
-BuildArch:	noarch
+%rename		xml-i18n-tools
 
 %description
 The intltool collection can be used to:
@@ -37,19 +36,12 @@ Merge back the translations from .po files into .xml, .desktop and
 make check
 
 %install
-rm -rf %{buildroot}
-
-%{makeinstall_std}
-
-%clean
-rm -rf %{buildroot}
+%makeinstall_std
 
 %files
-%defattr(-,root,root)
 %doc AUTHORS COPYING README
 %{_bindir}/*
 %{_datadir}/%{name}
 %{_datadir}/aclocal/*
 %{_mandir}/man8/*
-
 
