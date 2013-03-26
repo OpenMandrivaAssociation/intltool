@@ -1,13 +1,12 @@
 Summary:	Scripts and assorted auto* magic for i18nalizing various kinds of data files
 Name:		intltool
 Version:	0.50.2
-Release:	3
+Release:	4
 Group:		Development/GNOME and GTK+
 License:	GPLv2+
-URL: 		http://www.gnome.org/
+URL:		http://www.gnome.org/
 Source0:	http://edge.launchpad.net/%{name}/trunk/%{version}/+download/%{name}-%{version}.tar.gz
 BuildArch:	noarch
-
 BuildRequires:	diffutils
 BuildRequires:	perl-XML-Parser
 Requires:	perl-XML-Parser
@@ -42,7 +41,7 @@ make check
 %makeinstall_std
 
 %files
-%doc AUTHORS COPYING README
+%doc AUTHORS README
 %{_bindir}/*
 %{_datadir}/%{name}
 %{_datadir}/aclocal/*
