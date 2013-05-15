@@ -4,16 +4,15 @@ Version:	0.50.2
 Release:	4
 Group:		Development/GNOME and GTK+
 License:	GPLv2+
-URL:		http://www.gnome.org/
+Url:		http://www.gnome.org/
 Source0:	http://edge.launchpad.net/%{name}/trunk/%{version}/+download/%{name}-%{version}.tar.gz
 BuildArch:	noarch
 BuildRequires:	diffutils
 BuildRequires:	perl-XML-Parser
-Requires:	perl-XML-Parser
-Requires:	perl
 Requires:	gettext-devel
 Requires:	patch
-%rename		xml-i18n-tools
+Requires:	perl-XML-Parser
+Requires:	perl
 
 %description
 The intltool collection can be used to:
