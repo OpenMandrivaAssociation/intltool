@@ -1,7 +1,7 @@
 Summary:	Scripts and assorted auto* magic for i18nalizing various kinds of data files
 Name:		intltool
 Version:	0.50.2
-Release:	4
+Release:	5
 Group:		Development/GNOME and GTK+
 License:	GPLv2+
 Url:		http://www.gnome.org/
