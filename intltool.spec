@@ -6,6 +6,7 @@ Group:		Development/GNOME and GTK+
 License:	GPLv2+
 Url:		http://www.gnome.org/
 Source0:	http://edge.launchpad.net/%{name}/trunk/%{version}/+download/%{name}-%{version}.tar.gz
+Patch0:		https://raw.githubusercontent.com/Alexpux/MSYS2-packages/master/intltool/perl-5.22-compatibility.patch
 BuildArch:	noarch
 BuildRequires:	diffutils
 BuildRequires:	perl-XML-Parser
@@ -27,17 +28,17 @@ Merge back the translations from .po files into .xml, .desktop and
 .oaf files during software build time.
 
 %prep
-%setup -q
+%autosetup -p1
 
 %build
-%configure2_5x
-%make
+%configure
+%make_build
 
 %check
 make check
 
 %install
-%makeinstall_std
+%make_install
 
 %files
 %doc AUTHORS README
@@ -45,4 +46,3 @@ make check
 %{_datadir}/%{name}
 %{_datadir}/aclocal/*
 %{_mandir}/man8/*
-
