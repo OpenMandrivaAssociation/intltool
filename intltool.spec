@@ -1,7 +1,7 @@
 Summary:	Scripts and assorted auto* magic for i18nalizing various kinds of data files
 Name:		intltool
-Version:	0.50.2
-Release:	12
+Version:	0.51.0
+Release:	1
 Group:		Development/GNOME and GTK+
 License:	GPLv2+
 Url:		http://www.gnome.org/
@@ -30,7 +30,7 @@ Merge back the translations from .po files into .xml, .desktop and
 %setup -q
 
 %build
-%configure2_5x
+%configure
 %make
 
 %check
@@ -45,4 +45,3 @@ make check
 %{_datadir}/%{name}
 %{_datadir}/aclocal/*
 %{_mandir}/man8/*
-
