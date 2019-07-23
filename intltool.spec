@@ -6,7 +6,6 @@ Group:		Development/GNOME and GTK+
 License:	GPLv2+
 Url:		http://www.gnome.org/
 Source0:	http://edge.launchpad.net/%{name}/trunk/%{version}/+download/%{name}-%{version}.tar.gz
-Patch0:		https://raw.githubusercontent.com/Alexpux/MSYS2-packages/master/intltool/perl-5.22-compatibility.patch
 # Fix intltool-update to work with perl 5.26. Patch taken from
 # Debian's intltool_0.51.0-4.debian.tar.xz
 Patch1:		intltool-perl5.26-regex-fixes.patch
