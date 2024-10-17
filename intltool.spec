@@ -4,7 +4,7 @@ Version:	0.51.0
 Release:	5
 Group:		Development/GNOME and GTK+
 License:	GPLv2+
-Url:		http://www.gnome.org/
+Url:		https://www.gnome.org/
 Source0:	http://edge.launchpad.net/%{name}/trunk/%{version}/+download/%{name}-%{version}.tar.gz
 # Fix intltool-update to work with perl 5.26. Patch taken from
 # Debian's intltool_0.51.0-4.debian.tar.xz
