@@ -16,6 +16,11 @@ Patch2:		intltool-merge-Create-cache-file-atomically.patch
 Patch3:		intltool_distcheck-fix.patch
 
 BuildArch:	noarch
+BuildRequires:	autoconf
+BuildRequires:	automake
+BuildRequires:	libtool-base
+BuildRequires:	slibtool
+BuildRequires:	make
 BuildRequires:	diffutils
 BuildRequires:	perl(XML::Parser)
 BuildRequires:	perl(Getopt::Long)
